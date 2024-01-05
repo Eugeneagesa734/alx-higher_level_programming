@@ -12,7 +12,6 @@ class Rectangle:
             width (int): The width of the rectangle.
             height (int): The height of the rectangle
         """
-
         self.width = width
         self.height = height
 
@@ -23,15 +22,7 @@ class Rectangle:
 
         @width.setter
         def width(self, value):
-            """Set the width of the rectangle.
-
-            parameters:
-                value (int): The width of the rectangle
-
-            Raises:
-                TypeError: if 'value' is not an integer.
-                Valueerror: if 'value' is not grearer than 0
-            """
+            """Setter for the private instance of class width."""
             if not isinstance(value, int):
                 raise TypeError("width must be an integer")
             elif value < 0:
@@ -46,15 +37,7 @@ class Rectangle:
 
         @height.setter
         def height(self, value):
-            """set the rectangles height.
-
-            parameters:
-                value (int):The height of the rectangle.
-
-            Raises:
-                TypeError: if 'value' is not an integer.
-                ValueError: if 'value' is not greater than 0
-            """
+            """setter for the private instance of the attribute height"""
             if not isinstance(value, int):
                 raise TypeError("height must be an integer")
             elif value < 0:
